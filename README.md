@@ -1,10 +1,6 @@
 # KQueue HTTP/1.1 Server
 
-A multi-threaded, [KQueue](https://man.freebsd.org/cgi/man.cgi?kqueue) HTTP/1.1 server written in C++.
-
-It is concurrent, supporting 10K simultaneous clients at a throughput of 30K+ requests-per-second (RQS).
-
-Inspired by the [Reactor Pattern](https://en.wikipedia.org/wiki/Reactor_pattern) and [epoll-http](https://github.com/geoboom/epoll-http).
+A multi-threaded, [KQueue](https://man.freebsd.org/cgi/man.cgi?kqueue) HTTP/1.1 server written in C++, inspired by the [Reactor Pattern](https://en.wikipedia.org/wiki/Reactor_pattern) and [epoll-http](https://github.com/geoboom/epoll-http). It is highly concurrent, supporting 10K simultaneous clients at a throughput of 30K+ requests-per-second (RQS).
 
 ## Prerequisites
 
@@ -52,6 +48,9 @@ quit
 ```
 
 This will join the listener and worker threads, and close any open sockets.
+
+> [!WARNING]
+> For a graceful shutdown of threads and open sockets, remember to run the quit command!
 
 ## Benchmarking
 
