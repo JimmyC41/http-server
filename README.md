@@ -6,12 +6,12 @@ A multi-threaded, [KQueue](https://man.freebsd.org/cgi/man.cgi?kqueue) HTTP/1.1 
 
 - C++ compiler with C++23 support
 - CMake Version 4.0.2
-- Google Test
+- Intel TBB Library
 - spdlog
 
 On MacOS with Homebrew:
 ```
-brew install cmake googletest tbb
+brew install cmake googletest tbb spdlog
 ```
 
 ## Building and Usage
