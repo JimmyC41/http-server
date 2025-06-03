@@ -1,0 +1,6 @@
+c_cpp_properties.json
+settings.json
+build/
+build.sh
+config.sh
+run.sh
